@@ -1,0 +1,62 @@
+/* 选择lang属性的值是fr或值以fr- 开头的元素*/
+
+[lang|="fr"] {
+    font-weight: bold;
+}
+
+/* 具有"data-vegetable"属性含有值"not spicy"的所有元素,都变回绿色*/
+
+[data-vegetable*="not spicy"] {
+    color: green;
+}
+
+/* 具有"data-quantity"属性其值以"kg"结尾的所有元素 */
+
+[data-quantity$="kg"] {
+    font-weight: bold;
+}
+
+
+/* 具有属性"data-quantity"其值以"optional"开头的所有元素 */
+
+[data-quantity^="optional"] {
+    opacity: 0.5;
+}
+
+
+
+[lang="en-GB"] {
+    background: url("../images/en-GB.png") 5px center no-repeat;
+}
+[lang="de"] {
+    background: url("../images/de.png") 5px center no-repeat;
+  }
+[lang="es"] {
+    background: url("../images/es.png") 5px center no-repeat;
+  }
+[data-perf*="inc"] {
+    background-color: rgba(0,255,0,0.7);
+}
+[data-perf*="same"] {
+    background-color: rgba(0,0,255,0.5);
+}
+[data-perf*="dec"] {
+    background-color: rgba(255,0,0,0.7);
+}
+
+[data-perf*="pro"] {
+    font-weight: bold;
+  }
+  
+[data-perf*="rel"] {
+    font-style: italic;
+    color: #666;
+  }
+ ol {
+    padding: 0;
+  }
+ li {
+    padding: 3px 3px 3px 34px;
+    margin-bottom: 5px;
+    list-style-position: inside;
+  }
