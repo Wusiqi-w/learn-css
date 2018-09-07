@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside{
+    float: left;
+    width: 30%;
+}
+
+header, section, aside, nav, footer {
+    padding: 20px;
+}
+nav {
+    float: left;
+    width: 20%;
+}
+footer {
+    clear: both;
+}
+
+header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+}
+h1, h2 {
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+h2 {
+    font-size: 3.2rem;
+}
+/* 标题后第一段文字首行缩进20px */
+section h2 + p {
+    text-indent: 20px;
+}
+
+a {
+    outline: none;
+}
+a:link {
+    color: #a66;
+}
+a:visited {
+    color: rgb(172, 69, 69);
+}
+a:focus {
+    text-decoration: none;
+    color: rgb(150, 70, 70);
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(150, 70, 70);
+}
+a:active {
+    border: 1px solid palevioletred;
+    background: #a66;
+    color: bisque;
+}
+
+/* 在外部链接右侧插入外部链接图标 */
+a[href*="http"] {
+    background: url('https://mdn.mozillademos.org/files/12982/external-link-52.png') no-repeat 100% 0;
+    background-size: 16px 16px;
+    padding-right: 19px;
+
+}
+
+p, li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+}
+ul, ol {
+    margin: 1.6rem 0;
+}
+ul {
+    list-style-type: square;
+}
+ol {
+    list-style-type: lower-latin;
+}
+
+nav ul {
+    padding-left: 0;
+    margin-top: 0.8rem;
+}
+
+
+nav li {
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+nav li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 1px solid #a66;
+}
+
+nav li a:focus, nav li a:hover {
+    color: white;
+    background: #a66;
+  }
+  
+  nav li a:active {
+    color: white;
+    background: black;
+  }
+  

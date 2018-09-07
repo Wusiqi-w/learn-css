@@ -1,0 +1,49 @@
+body {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+p {
+    line-height: 1.4;
+}
+
+a {
+ outline: none;
+ text-decoration: none;
+ padding: 2px 1px 0;
+}
+
+
+/* 没有访问过的 */
+a:link {
+color: pink;
+text-decoration: none;
+}
+
+/* 已经被访问过了 */
+a:visited {
+color: rgb(241, 111, 241);
+}
+/* 被选中时，tab键 */
+a:focus {
+    border-bottom: 1px solid;
+    background: indianred;
+}
+/* 鼠标悬停时 */
+a:hover {
+    border-bottom: 1px solid;
+    color: darksalmon;
+}
+
+/* 被激活时，鼠标长按 */
+a:active {
+    background: darkseagreen;
+  color: #CDFEAA;
+}
+
+a[href*="http"] {
+    background: url('https://mdn.mozillademos.org/files/12982/external-link-52.png') no-repeat 100% 0;
+    background-size: 16px 16px;
+    padding-right: 19px;
+}
