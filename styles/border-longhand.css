@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+div {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    line-height: 2;
+    background-color: yellow;
+    text-align: center;
+    display: inline-block;
+}
+
+/* 实线 */
+.complete {
+    border-style: solid;
+}
+/* 虚线 */
+.written {
+    border-style: dashed;
+}
+/* 点状的 */
+.incomplete {
+    border-style: dotted;
+}
+
+.writing, .review {
+    border-bottom: 6px solid red;
+}
+
+
